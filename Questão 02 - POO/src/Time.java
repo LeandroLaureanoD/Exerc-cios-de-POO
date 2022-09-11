@@ -21,56 +21,15 @@ public class Time {
         this.relacionadosList = relacionadosList;
     }
 
-    // GETTER E SETTER
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getApelido() {
-        return apelido;
-    }
-
-    public void setApelido(String apelido) {
-        this.apelido = apelido;
-    }
-
-    public String getFundacao() {
-        return fundacao;
-    }
-
-    public void setFundacao(String fundacao) {
-        this.fundacao = fundacao;
-    }
-
-    public ArrayList<Jogador> getPlantel() {
-        return plantel;
-    }
-
-    public void setPlantel(ArrayList<Jogador> plantel) {
-        this.plantel = plantel;
-    }
-
-    public ArrayList<Jogador> getRelacionadosList() {
-        return relacionadosList;
-    }
-
-    public void setRelacionadosList(ArrayList<Jogador> relacionadosList) {
-        this.relacionadosList = relacionadosList;
-    }
-
     //METODOS
     public ArrayList<Jogador> relacionarJogadores (){
-        List jogadores = plantel.stream().sorted(Comparator.comparing(Jogador::getQualidade).reversed()).limit(11).collect(Collectors.toList());
+        List jogadores = plantel.stream().sorted(Comparator.comparing(Jogador::getQualidade).reversed()).limit(2).collect(Collectors.toList());
         relacionadosList = new ArrayList<Jogador>(jogadores);
         return relacionadosList;
 
     }
 
-    /*public String toString(){
-        return getNome() + apelido + fundacao + plantel + relacionadosList;
-    }*/
+    public String toString(){
+        return "Titulares do " + nome;
+    }
 }

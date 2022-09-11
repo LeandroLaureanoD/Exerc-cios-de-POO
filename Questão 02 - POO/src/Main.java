@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] arargs) {
+    public static void main(String[] argrs) {
 
         ArrayList<Jogador> jogadoresOne = new ArrayList<>();
         jogadoresOne.add(new Jogador(0, "Leandro", "Servidor", "1990/16/01", 4, "Atacante", 6));
@@ -54,12 +54,18 @@ public class Main {
         Time timeTwo = new Time("Cruzeiro", "Raposa", "1955/03/03", jogadoresTwo, jogadoresTwo);
 
         System.out.println();
-        System.out.println("Titulares do " + timeOne.getNome() + ": ");
+        System.out.println(timeOne);
+        System.out.println(timeOne.relacionarJogadores());
+
+        System.out.println();
+        System.out.println(timeTwo);
+        System.out.println(timeTwo.relacionarJogadores());
+        /*System.out.println("Titulares do " + timeOne.getNome() + ": ");
         timeOne.relacionarJogadores().stream().forEach(t -> System.out.println(t.getNumero() + " - " + t.getNome() + " - " + t.getQualidade()));
 
         System.out.println();
         System.out.println("Titulares do " + timeTwo.getNome() + ": ");
-        timeTwo.relacionarJogadores().stream().forEach(t -> System.out.println(t.getNumero() + " - " + t.getNome() + " - " + t.getQualidade()));
+        timeTwo.relacionarJogadores().stream().forEach(t -> System.out.println(t.getNumero() + " - " + t.getNome() + " - " + t.getQualidade()));*/
 
     }
 }
