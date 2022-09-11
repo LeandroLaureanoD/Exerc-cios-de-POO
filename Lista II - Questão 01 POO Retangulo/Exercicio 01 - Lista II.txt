@@ -1,0 +1,25 @@
+1) Crie uma classe Retangulo que obedeça à descrição abaixo:
+Retangulo
+- lado1: double
+- lado2: double
+- area: double
+- perimetro: double
++ Retangulo()
++ Retangulo(lado1: double, lado2: double)
++ calcularArea(): void
++ calcularPerimetro(): void
+? A classe possui os atributos lado1, lado2, area e perimetro, todos do tipo float.
+? O método calcularArea deve realizar o cálculo da área do retângulo (area =
+lado1 * lado2). Em seguida, deve escreve o valor da área na tela.
+? O método calcularPerimetro faz o cálculo do perimetro (perimetro = 2*lado1 +
+2*lado2). Em seguida, deve escreve o valor do perímetro na tela.
+Crie o método main e instancie a classe Retangulo, criando um objeto
+novoRetangulo do tipo Retangulo.
+? Atribua o valor 10 ao atributo lado1.
+? Atribua o valor 5 ao atributo lado2.
+? Chame o método calcularArea.
+? Chame o método calcularPerimetro.
+? Atribua o valor 7 ao atributo lado2.
+? Chame o método calcularArea.
+? Chame o método calcularPerimetro.
+? Crie outras 5 instancias de retângulos, conforme as instruções anteriores.
