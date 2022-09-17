@@ -1,0 +1,32 @@
+6) Construa a classe Filmes em Java, que obedeça à descrição abaixo:
+Filme
+- titulo: String
+- duracaoEmMinutos: Integer
++ Filme()
++ Filme(titulo: String, duracaoEmMinutos: Integer)
++ exibirDuracaoEmHoras(): void
+? A classe deve possuir dois atributos privados: titulo (do tipo String) e
+duracaoEmMinutos (do tipo int).
+? Crie os métodos de acesso (get e set) para os atributos titulo e
+duracaoEmMinutos.
+? Crie um método exibirDuracaoEmHoras que converta o valor em minutos para
+horas e apresente a mensagem “O filme TITULO possui X horas e Y minutos de duração”.
+? Por exemplo, dado o filme com título Titanic que possui 194 minutos de
+duração, a mensagem que deverá ser exibida para o usuário será:
+“O filme Titanic possui 3 horas e 14 minutos de duração”
+7) Crie uma classe TestarFilme que possua um método main de modo que seja
+possível testar a classe Filme criada na questão anterior.
+? Crie um objeto filme1 do tipo Filme.
+? Altere o atributo título para “Os Vingadores”.
+? Altere o atributo duracaoEmMinutos para 142.
+? Chame o método exibirDuracaoEmHoras() para mostrar quantas horas o filme
+possui.
+? Crie um objeto filme2 do tipo Filme.
+? Altere o atributo título do filme2 para “Hotel Transilvânia”.
+? Altere o atributo duracaoEmMinutos do filme2 para 93.
+? Chame o método exibirDuracaoEmHoras() do filme2 para mostrar quantas
+horas o filme possui.
+? Exiba a mensagem: “Os filmes em cartaz são X e Y”, onde no lugar de X,
+deverá aparecer o título do filme1 e no lugar de Y deverá aparecer o título do filme2.
+? Instancie outros 5 filmes e faça as mesmas ações descritas acima, porém
+utilizando novos valores.
