@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] argrs){
+    public static void main(String[] args){
         Funcionario funcionario;
 
         funcionario = new Funcionario("Lucas", "Silva");

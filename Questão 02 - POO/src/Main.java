@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    public static void main(String[] argrs) {
+    public static void main(String[] args) {
 
         ArrayList<Jogador> jogadoresOne = new ArrayList<>();
         jogadoresOne.add(new Jogador(0, "Leandro", "Servidor", "1990/16/01", 4, "Atacante", 6));

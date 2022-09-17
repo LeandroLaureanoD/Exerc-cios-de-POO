@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] argrs){
+    public static void main(String[] args){
 
         String nomeFunc;
         int matriculaFunc;
