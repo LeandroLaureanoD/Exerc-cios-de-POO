@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Jogador {
-    //ATRIBUTOS DA CLASSE JOGADOR
+    //Atributos da classe jogador
     int atleta_0;
     int id;
     String nome;
@@ -19,9 +19,9 @@ public class Jogador {
     int cartaoVermelho;
     int treino;
 
-    //CONTRUTORES DA CLASSE JOGADOR
+    //Construtores da classe jogador
     public Jogador() {
-        //INSTANCIA DO CONTRUTOR VAZIO
+        //Instancia do construtor vazio
     }
     public Jogador(int id, String nome, String apelido, String dataNascimento, int numero, String posicao, int qualidade, int cartoes, boolean suspenso) {
         this.id = id;
@@ -34,7 +34,7 @@ public class Jogador {
         this.cartoes = cartoes;
         this.suspenso = suspenso;
     }
-    //MÉTODOS DA CLASSE JOGADOR
+    //Metodos da classe jogador
     public boolean verificarCondicaoDejogo(){
         this.suspenso = !suspenso && cartoes <= 2 && cartaoAmarelo < 3 && cartaoVermelho != 1;
         return this.suspenso;

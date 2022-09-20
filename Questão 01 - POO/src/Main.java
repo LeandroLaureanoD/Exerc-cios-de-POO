@@ -5,7 +5,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //ARRAY DA INSTANCIA CLASSE JOGADOR
         Jogador[] atleta = new Jogador[11];
         atleta[0] = new Jogador(0, "Leandro", "Servidor", "1990/16/01", 9, "Atacante", 10, 1, false);
         atleta[1] = new Jogador(1, "Leonardo", "Cordenador", "1991/16/02", 9, "Goleiro", 10, 3, false);
@@ -26,21 +25,20 @@ public class Main {
 
         int idAtleta = 0;
 
-        //VERIFICA SE O USUÁRIO DESEJA ESPULSAR O ATLETA - DIGITANDO 1 PARA SIM E 2 PARA NÃO
+        //Verifica se o usuario deseja espulsar o atleta
         if (espulsarAtleta == 1) {
             System.out.println("Digite o ID do Atleta:");
             idAtleta = sc.nextInt();
         }
 
-        //VARIAVEL PARA RECEBER O VALOR DE "IDATLETA"
         int idAtletab = idAtleta;
 
-        //ESTRUTURA DE REPETIÇÃO PARA VERIFICAR MEU ARRAY
+        //Estrutura de repeticao para verificar meu array
         for (Jogador jogador : atleta) {
 
-            //VERIFICA SE O VALOR DIGITADO PELO USUÁRIO É IGUAL A 1
+            //Verifica se o valor digitado pelo usuario e igual a 1
             if (espulsarAtleta == 1) {
-                //VERIFICA QUAL ATLETA DEVE SER ESPULSO POR CARTÃO VERMELHO
+                //Verifica qual atleta deve ser espulso por cartao vermelho
                 if (idAtletab == jogador.id) {
                     jogador.aplicarCartaoVermelho(1);
                     System.out.println(jogador.posicao + ": " + jogador.id + " - " + jogador.nome + " " + "(" + jogador.apelido + ")" + " - " + jogador.dataNascimento + " " + "CONDIÇÃO: SUSPENSO POR CARTÃO VERMELHO");
@@ -50,7 +48,7 @@ public class Main {
             else {
                 //jogador.executarTreinamento();
 
-                //VERIFICA SE O ATLETA ESTÁ APTO OU NÃO PARA JOGAR
+                //Verifica se o atleta esta apto ou nao para jogar
                 if (jogador.verificarCondicaoDejogo()) {
                     System.out.println(jogador.posicao + ": " + jogador.id + " - " + jogador.nome + " " + "(" + jogador.apelido + ")" + " - " + jogador.dataNascimento + " " + "CONDIÇÃO: TÁ PRA JOGAR");
                 }
@@ -58,9 +56,9 @@ public class Main {
                     System.out.println(jogador.posicao + ": " + jogador.id + " - " + jogador.nome + " " + "(" + jogador.apelido + ")" + " - " + jogador.dataNascimento + " " + "CONDIÇÃO: SUSPENSO");
                 }
 
-                /**jogador.aplicarCartaoAmarelo(1);
-                //VERIFICA SE O ATLETA ESTÁ APTO OU NÃO PARA JOGAR DE ACORDO COM A QUANTIDADE DE CARTÃO AMARELO INSERIDA
-                if (jogador.suspenso == true) {
+                //jogador.aplicarCartaoAmarelo(1);
+                //Verifica se o atleta esta apto ou nao para jogar de acordo com a qunatidade de cartao amarelo inserido
+                /*if (jogador.suspenso == true) {
                     System.out.println(jogador.posicao + ": " + jogador.id + " - " + jogador.nome + " " + "(" + jogador.apelido + ")" + " - " + jogador.dataNascimento + " " + "CONDIÇÃO: TÁ PRA JOGAR");
                 } else {
                     System.out.println(jogador.posicao + ": " + jogador.id + " - " + jogador.nome + " " + "(" + jogador.apelido + ")" + " - " + jogador.dataNascimento + " " + "CONDIÇÃO: SUSPENSO");
