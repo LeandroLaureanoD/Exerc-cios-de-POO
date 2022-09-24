@@ -1,21 +1,27 @@
 4) Crie uma classe Funcionário com atributos que permitam mapear o nome do
 funcionário, a matrícula, o salário, a data de admissão e o seu CPF.
+
 a) A classe deve conter um método receberAumento, o qual aumenta o salário
 do funcionário de acordo com o parâmetro informado (double), sem retornar
 nenhum valor.
+
 b) A classe deve conter um método calcularGanhoBrutoAnual que não recebe
 nenhum parâmetro e retorna apenas o total bruto anual recebido pelo
 funcionário.
+
 c) Crie um método calcularImposto, o qual não recebe nenhum parâmetro e
 retorno o imposto pago pelo funcionário no decorrer de um ano (double).
+
 d) Crie um método calcularGanhoLiquidoMensal que não recebe nenhum
 parâmetro e retorna o salário líquido do funcionário, sendo que existem os
 seguintes descontos:
 ? O funcionário paga 11% de INSS
 ? Se o salário é maior que R$ 2.500,00 é cobrado 17,5% de IR do que
 exceder os R$ 2.500,00.
+
 e) Crie um método calcularGanhoLiquidoAnual que não recebe nenhum
 parâmetro e retorna o total líquido recebido pelo funcionário, ou seja, o bruto
 reduzido dos impostos devidos.
+
 f) Crie a representação dessa classe (atributos e métodos) de acordo com a
 notação UML.

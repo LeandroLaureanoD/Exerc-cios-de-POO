@@ -1,4 +1,5 @@
 3) Crie uma classe Funcionario que obedeça à descrição abaixo:
+
 Funcionario
 - nome: String
 - sobrenome: String
@@ -9,6 +10,7 @@ Funcionario
 + nomeCompleto(): void
 + calcularSalario(): void
 + incrementarHoras( horas: Integer): void
+
 ? A classe possui os atributos nome, sobrenome, horasTrabalhadas e
 valorPorHora.
 ? O método nomeCompleto deve escrever na tela o atributo nome concatenado
@@ -18,6 +20,7 @@ mês, multiplicando o atributo horasTrabalhadas pelo atributo valorPorHora. Em
 seguida, escreve o valor na tela.
 ? O método incrementarHoras adiciona um valor passado por parâmetro ao valor
 já existente no atributo valorPorHora.
+
 Crie o método main e instancie a classe Funcionário criada, criando um objeto
 novoFuncionario do tipo Funcionario.
 ? Atribua o valor “Luis” ao atributo nome.

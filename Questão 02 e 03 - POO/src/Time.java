@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
 import java.util.stream.Collectors;
 public class Time {
     private String nome;
@@ -8,9 +7,6 @@ public class Time {
     private String fundacao;
     public ArrayList<Jogador> plantel;
     public ArrayList<Jogador> relacionadosList;
-
-    public Time(){
-    }
 
     //CONTRUTOR CLASSE TIME
     public Time(String nome, String apelido, String fundacao, ArrayList<Jogador> plantel, ArrayList<Jogador> relacionadosList) {
@@ -20,16 +16,19 @@ public class Time {
         this.plantel = plantel;
         this.relacionadosList = relacionadosList;
     }
-
     //METODOS
-    public ArrayList<Jogador> relacionarJogadores (){
-        List jogadores = plantel.stream().sorted(Comparator.comparing(Jogador::getQualidade).reversed()).limit(2).collect(Collectors.toList());
-        relacionadosList = new ArrayList<Jogador>(jogadores);
+    public ArrayList<Jogador> relacionarJogadoresTitular (){
+        relacionadosList = plantel.stream().sorted(Comparator.comparing(Jogador::getQualidade).reversed()).limit(11).collect(Collectors.toCollection(ArrayList::new));
+        return relacionadosList;
+
+    }
+    public ArrayList<Jogador> relacionarJogadoresReserva (){
+        relacionadosList = plantel.stream().sorted(Comparator.comparing(Jogador::getQualidade).reversed()).skip(11).collect(Collectors.toCollection(ArrayList::new));
         return relacionadosList;
 
     }
 
     public String toString(){
-        return "Titulares do " + nome;
+        return "Clube " + nome + "\n";
     }
 }

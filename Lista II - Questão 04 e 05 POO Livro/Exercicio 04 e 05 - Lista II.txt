@@ -1,4 +1,5 @@
 4) Construa a classe Livros em Java, que obedeça à descrição abaixo:
+
 Livro
 - titulo: String
 - qtdPaginas: Integer
@@ -6,6 +7,7 @@ Livro
 + Livro()
 + Livro(nome: String, qtdPaginas: Integer)
 + verificarProgresso(): void
+
 ? A classe possui os atributos titulo, qtdPaginas e paginasLidas. Esses atributos
 devem ser marcados com o modificador de acesso private.
 ? Crie os métodos get e set para cada um dos atributos.
@@ -15,9 +17,11 @@ e paginasLidas, através da formula: porcentagem = paginasLidas * 100 / qtdPagina
 valor da porcentagem deverá ser mostrado na tela conforme a mensagem “Você já leu X
 por cento do livro”, onde o valor de X é o valor calculado pela fórmula apresentada
 anteriormente.
+
 5) Crie uma classe TestarLivros no mesmo pacote da classe Livros da
 questão anterior. Essa classe possuirá apenas o método main que servirá para testar a
 classe Livros. As seguintes ações devem ser realizadas:
+
 ? Crie um objeto livrofavorito do tipo Livro.
 ? Altere o atributo titulo para “O Pequeno Príncipe”. Utilize, para isso, o método
 setTitulo;
